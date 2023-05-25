@@ -11,8 +11,7 @@
         <module name="test" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="QM_AppiumSeleniumJava" target="1.8" />
+    <bytecodeTargetLevel target="11">
       <module name="test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
