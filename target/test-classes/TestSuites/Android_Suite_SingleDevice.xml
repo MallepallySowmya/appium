@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="com.qm.listeners.TestNGRetry"></listener>
+    </listeners>
+    <test name="Test">
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="systemPort" value="4723"/>
+        <parameter name="platform" value="Android 10"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+   
+        <classes>
+            <class name="com.qm.android.testcases.HomePageTest">
+                <methods>
+                    <include name="addContactAndVerifyContactDetails"/>
+                    <include name="addContactAndDeleteContact"/>
+                    <include name="addContactAndAddToFavorites"/>
+                    <include name="sendSmsToContact"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

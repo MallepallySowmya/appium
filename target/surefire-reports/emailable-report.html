@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">248,411</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.qm.android.testcases.HomePageTest</td><td><a href="#m0">addContactAndDeleteContact</a></td><td rowspan="1">1684399496569</td><td rowspan="1">77955</td></tr><tr class="failedeven"><td><a href="#m1">sendSmsToContact</a></td><td rowspan="1">1684399604243</td><td rowspan="1">93966</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qm.android.testcases.HomePageTest</td><td><a href="#m2">addContactAndAddToFavorites</a></td><td rowspan="1">1684399452412</td><td rowspan="1">42989</td></tr><tr class="passedeven"><td><a href="#m3">addContactAndVerifyContactDetails</a></td><td rowspan="1">1684399575523</td><td rowspan="1">26869</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">com.qm.android.testcases.HomePageTest#addContactAndDeleteContact</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&apos;No results&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.android.contacts.activi..., appium:appPackage: com.google.android.contacts, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.contacts.activi..., appPackage: com.google.android.contacts, automationName: UiAutomator2, noReset: false, orientation: PORTRAIT, platformName: ANDROID, platformVersion: 10, udid: 192.168.27.101:5555}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Genymobile, appium:deviceModel: Nexus 4, appium:deviceName: 192.168.27.101:5555, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 768x1280, appium:deviceUDID: 192.168.27.101:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:orientation: PORTRAIT, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:udid: 192.168.27.101:5555, appium:viewportRect: {height: 1136, left: 0, top: 48, width: 768}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 08010965-fa0e-417b-8fbb-66849c262342
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qm.android.utils.MobileActions.waitForVisible(MobileActions.java:72)
+	at com.qm.android.utils.MobileActions.isDisplayed(MobileActions.java:432)
+	at com.qm.android.screens.HomePage.deleteContact(HomePage.java:41)
+	at com.qm.android.testcases.HomePageTest.addContactAndDeleteContact(HomePageTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qm.android.testcases.HomePageTest#sendSmsToContact</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.LinearLayout[@content-desc=&quot;Send SMS&quot;]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ImageView (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.android.contacts.activi..., appium:appPackage: com.google.android.contacts, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.android.contacts.activi..., appPackage: com.google.android.contacts, automationName: UiAutomator2, noReset: false, orientation: PORTRAIT, platformName: ANDROID, platformVersion: 10, udid: 192.168.27.101:5555}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Genymobile, appium:deviceModel: Nexus 4, appium:deviceName: 192.168.27.101:5555, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 768x1280, appium:deviceUDID: 192.168.27.101:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:orientation: PORTRAIT, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 48, appium:takesScreenshot: true, appium:udid: 192.168.27.101:5555, appium:viewportRect: {height: 1136, left: 0, top: 48, width: 768}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 44db05d9-f8e0-41bb-8eb7-dde9c2d66cd1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qm.android.utils.MobileActions.waitForVisible(MobileActions.java:72)
+	at com.qm.android.utils.MobileActions.click(MobileActions.java:84)
+	at com.qm.android.screens.HomePage.sendSmsToContact(HomePage.java:128)
+	at com.qm.android.testcases.HomePageTest.sendSmsToContact(HomePageTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qm.android.testcases.HomePageTest#addContactAndAddToFavorites</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qm.android.testcases.HomePageTest#addContactAndVerifyContactDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

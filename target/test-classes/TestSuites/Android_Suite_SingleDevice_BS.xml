@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Pixel 6 Pro API 31">
+        <parameter name="deviceName" value="Pixel 6 Pro API 31"/>
+        <parameter name="deviceVersion" value="0"/>
+        <parameter name="platform" value="Android"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qm.android.testcases.HomePageTest">
+                <methods>
+                    <include name="HomePageTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

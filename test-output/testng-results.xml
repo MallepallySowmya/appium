@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-20T14:52:49 IST" name="Default suite" finished-at="2023-04-20T14:53:05 IST" duration-ms="15377">
+    <groups>
+      <group name="regression">
+        <method signature="HomePageTest.homePage()[pri:0, instance:com.qm.android.testcases.HomePageTest@305ffe9e]" name="homePage" class="com.qm.android.testcases.HomePageTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2023-04-20T14:52:49 IST" name="Default test" finished-at="2023-04-20T14:53:05 IST" duration-ms="15377">
+      <class name="com.qm.android.testcases.HomePageTest">
+        <test-method signature="homePage()[pri:0, instance:com.qm.android.testcases.HomePageTest@305ffe9e]" started-at="2023-04-20T14:52:49 IST" name="homePage" description="[TC_632, TC_633, TC_634, TC_635, TC_636, TC_638, TC_640, TC_642, TC_643] Verify 2 sections on chat listing screen (i) Following (ii) Others, which following conatains all followed users chats &amp; others contains non followed users chats." finished-at="2023-04-20T14:53:03 IST" duration-ms="13732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+      </class> <!-- com.qm.android.testcases.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,216 @@
+{
+  "PopUp" : {
+    "btn_allow" : {
+      "locatorType" : "id",
+      "locatorValue" : "com.android.permissioncontroller:id/permission_allow_button"
+    }
+
+  },
+  "ContactsWithGoogle" : {
+    "btn_skip" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.Button[@text='Skip']"
+    }
+  },
+
+  "ContactsPage" : {
+    "txt_NoContactsYet" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.TextView[@text='No contacts yet']"
+    },
+    "btn_CreateContact" : {
+      "locatorType" : "id",
+      "locatorValue" : "com.google.android.contacts:id/floating_action_button"
+    },
+    "txt_CreateContact" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.TextView[@text='Create contact']"
+    },
+    "EnterPhone" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.EditText[@text='Phone']"
+    },
+
+    "EnterFirstName" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.EditText[@text='First name']"
+    },
+    "EnterLastName" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.EditText[@text='Last name']"
+    },
+    "Mobile" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.Spinner[@text='Mobile']"
+    },
+    "Work" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//*[@text='Work']"
+    },
+    "btn_Save" : {
+      "locatorType" : "id",
+      "locatorValue" : "com.google.android.contacts:id/toolbar_button"
+    },
+    "btn_Ok" : {
+      "locatorType" : "id",
+      "locatorValue" : "android:id/button1"
+    },
+    "txt_Phone" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "(//android.widget.FrameLayout/android.widget.EditText[@class='android.widget.EditText'])[4]"
+    },
+    "txt_PhoneNo" : {
+      "locatorType" : "id",
+      "locatorValue" : "com.google.android.contacts:id/header"
+    },
+    "txt_Name" : {
+      "locatorType" : "id",
+      "locatorValue" : "com.google.android.contacts:id/large_title"
+    },
+    "More_Options" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.ImageView[@content-desc='More options']"
+    },
+    "btn_Delete" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.TextView[@text='Delete']"
+    },
+    "NavigateUp" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.ImageButton[@content-desc='Navigate up']"
+    },
+    "SearchContact" : {
+      "locatorType" : "id",
+      "locatorValue" : "com.google.android.contacts:id/open_search_bar"
+    },
+    "Enter_SearchText" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "(//android.widget.EditText[@text='Search contacts'])[1]"
+    },
+    "Contact" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.Button[@text='Phone contacts']"
+    },
+    "btn_Edit": {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.Button[@content-desc='Edit contact']"
+    },
+    "EnterCompany" : {
+      "locatorType" : "xpath",
+      "locatorValue" : "//android.widget.EditText[@text='Company']"
+    },
+    "Searched_Contact" : {
+        "locatorType" : "xpath",
+        "locatorValue" : "(//android.widget.Button)[2]"
+    },
+    "Add_To_Favorities" : {
+        "locatorType": "xpath",
+        "locatorValue": "//android.widget.Button[@content-desc='Add to favorites']"
+    },
+    "Text_SMS" : {
+        "locatorType": "xpath",
+        "locatorValue": "//android.widget.TextView[@text='Text']"
+    },
+    "Text_Message" : {
+        "locatorType": "xpath",
+        "locatorValue": "//android.widget.EditText[@text='Text message']"
+    },
+    "Send_Message_Button" : {
+        "locatorType": "xpath",
+        "locatorValue": "//android.widget.LinearLayout[@content-desc=\"Send SMS\"]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ImageView"
+    },
+    "Edit_Contact" : {
+        "locatorType": "xpath",
+        "locatorValue": "//android.widget.Button[@content-desc='Edit contact']"
+      },
+    "Enter_Company" : {
+        "locatorType" : "xpath",
+        "locatorValue" : "//android.widget.EditText[@text='Company']"
+      },
+    "Email" : {
+        "locatorType": "xpath",
+        "locatorValue": "//android.widget.EditText[@text='Email']"
+    },
+    "Phone_Contacts_Tab" : {
+        "locatorType": "xpath",
+        "locatorValue": "//android.widget.Button[@text='Phone contacts']"
+    },
+
+    "Email_Contacts_Tab" : {
+        "locatorType": "xpath",
+        "locatorValue": "//android.widget.Button[@text='Email contacts']"
+    },
+    "Email_In_ContactInfo" : {
+      "locatorType": "xpath",
+      "locatorValue": "//android.widget.TextView[@text='qmtestemail@gmail.com']"
+    },
+    "Company" : {
+        "locatorType": "xpath",
+        "locatorValue": "//android.widget.Button[@text='Company']"
+    },
+    "Company_Name" : {
+      "locatorType": "xpath",
+      "locatorValue": "//android.widget.TextView[@text='##QMTest##']"
+    },
+    "Company_Name_In_ContactInfo" : {
+      "locatorType": "xpath",
+      "locatorValue": "//android.widget.TextView[@text='##QMTest##']"
+    },
+     "Email_In_Contact" : {
+        "locatorType": "xpath",
+        "locatorValue": "(//android.widget.TextView[@resource-id='com.google.android.contacts:id/header'])[2]"
+     },
+    "Company_In_Contact" : {
+        "locatorType": "xpath",
+        "locatorValue": "(//android.widget.TextView[@resource-id='com.google.android.contacts:id/header'])[3]"
+    },
+    "txt_FirstName" : {
+      "locatorType": "xpath",
+      "locatorValue": "(//android.widget.EditText)[1]"
+    },
+    "Delete" : {
+      "locatorType": "xpath",
+      "locatorValue": "//android.widget.Button[@text='Delete']"
+    },
+    "No_Result" : {
+      "locatorType": "xpath",
+      "locatorValue": "//android.widget.TextView[@text='No results']"
+    },
+    "Enabled_FavoritesIcon" : {
+      "locatorType": "xpath",
+      "locatorValue": "//android.widget.Button[@content-desc='Remove from favorites']"
+    },
+    "Fix&Manage" : {
+      "locatorType": "xpath",
+      "locatorValue": "//android.widget.TextView[@text='Fix & manage']"
+    },
+    "Blocked_Contacts" : {
+      "locatorType": "xpath",
+      "locatorValue": "//android.widget.TextView[@text='Blocked numbers']"
+    },
+    "Add_A_Number_blocked" : {
+      "locatorType": "xpath",
+      "locatorValue":"com.android.server.telecom:id/add_blocked"
+    }
+  },
+
+  "Message" : {
+    "SearchBar" : {
+      "locatorType": "id",
+      "locatorValue": "com.google.android.apps.messaging:id/open_search_bar_text_view"
+    },
+    "Enter_SearchBar" : {
+      "locatorType": "id",
+      "locatorValue": "com.google.android.apps.messaging:id/zero_state_search_box_auto_complete"
+    },
+    "Select_Contact" : {
+      "locatorType": "id",
+      "locatorValue": "com.google.android.apps.messaging:id/conversation_snippet"
+    },
+    "txt_Message" : {
+      "locatorType": "id",
+      "locatorValue": "com.google.android.apps.messaging:id/message_text"
+    }
+  }
+
+}
