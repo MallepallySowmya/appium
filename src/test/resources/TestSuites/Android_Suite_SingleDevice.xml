@@ -21,6 +21,8 @@
                     <include name="addContactAndDeleteContact"/>
                     <include name="addContactAndAddToFavorites"/>
                     <include name="sendSmsToContact"/>
+                    <include name="addContactAndEditContactDetails"/>
+                    <include name="addContactAndBlock"/>
                 </methods>
             </class>
 

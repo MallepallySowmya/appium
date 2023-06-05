@@ -7,6 +7,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.model.Media;
 import com.aventstack.extentreports.model.Test;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.ExtentSparkReporterConfig;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import java.io.IOException;
@@ -29,6 +30,7 @@ public class ReportManager {
             String dateStamp = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
             htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/WebReports/" + dateStamp
                     + "/" + "Contacts-" + timeStamp + ".html");            // Create an object of Extent Reports
+//            htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/MobileReports/"+".html");
             extent = new ExtentReports();
             extent.attachReporter(htmlReporter);
             extent.setSystemInfo("Host Name", "Contacts");
@@ -78,7 +80,7 @@ public class ReportManager {
      * none
      * =============================================================================
      *
-     * @param driver
+//     * @param driver
      * @throws IOException
      */
     public static void logScreenshot() throws IOException {
@@ -96,7 +98,7 @@ public class ReportManager {
      * none
      * =============================================================================
      *
-     * @param driver
+//     * @param driver
      * @throws IOException
      */
     public static void logScreenshotInfo() throws IOException {
@@ -113,7 +115,7 @@ public class ReportManager {
      * none
      * =============================================================================
      *
-     * @param driver
+//     * @param driver
      * @throws IOException
      */
     public static void logScreenshotInfo1() throws IOException {
@@ -160,7 +162,8 @@ public class ReportManager {
             String timeStamp = new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss").format(new Date());
             String dateStamp = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
             htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/MobileReports/" + dateStamp
-                    + "/" + "Contacts-" + timeStamp + ".html");
+                    + "/" + "Contacts-" + timeStamp + "Spark.html");
+//            htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/MobileReports/"+"Spark.html");
             // Create an object of Extent Reports
             extent = new ExtentReports();
             extent.attachReporter(htmlReporter);
