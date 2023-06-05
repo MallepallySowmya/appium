@@ -30,7 +30,6 @@ public class HomePageTest {
         homePage.navigateBack();
         homePage.searchContact();
         homePage.deleteContact();
-
     }
 
     @Test(description =  "addContactAndAddToFavorites", groups = "regression")
@@ -42,7 +41,6 @@ public class HomePageTest {
         homePage.navigateBack();
         homePage.searchContact();
         homePage.addToFavorites();
-
     }
 
     @Test(description =  "sendSmsToContact", groups = "regression")
@@ -72,7 +70,6 @@ public class HomePageTest {
         HomePage homePage = new HomePage();
         homePage.allowAndSkipButton();
         homePage.createContact();
-
     }
 
 }

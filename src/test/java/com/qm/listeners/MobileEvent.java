@@ -56,7 +56,7 @@ public class MobileEvent implements ITestListener {
 			System.out.println("key2: " + SystemPort);
 
 			initDriver.startMobileDriver(Platform, Udid, SystemPort, DeviceName, DeviceVersion);
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -67,6 +67,7 @@ public class MobileEvent implements ITestListener {
 		if (ConfigReader.getValue("browserstack").equalsIgnoreCase("true")) {
 
 			JavascriptExecutor jse = (JavascriptExecutor) DriverFactory.getInstance().getMobileDriver();
+
 			jse.executeScript("browserstack_executor: {\"action\": \"setSessionName\", \"arguments\": {\"name\":\""
 					+ arg0.getMethod().getMethodName()+" }}");
 		}else {

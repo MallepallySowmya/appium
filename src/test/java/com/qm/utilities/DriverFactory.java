@@ -2,6 +2,7 @@ package com.qm.utilities;
 
 
 
+import com.qm.listeners.MobileEvent;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -122,12 +123,13 @@ public class DriverFactory {
             capabilities.setCapability(MobileCapabilityType.ORIENTATION, "PORTRAIT");
             capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
 
-                appiumDriver.set(new AndroidDriver(new URL("http://0.0.0.0:4723"), capabilities));
-           
+
+            appiumDriver.set(new AndroidDriver(new URL("http://0.0.0.0:4723"), capabilities));
+
 
             getMobileDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         } else {
-
+            System.out.println("in side bs method");
             JSONParser parser = new JSONParser();
             JSONObject config = (JSONObject) parser
                     .parse(new FileReader("src/test/resources/ConfigFiles/parallel.conf.json"));
