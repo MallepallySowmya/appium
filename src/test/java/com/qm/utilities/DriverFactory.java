@@ -124,7 +124,7 @@ public class DriverFactory {
             capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
 
 
-            appiumDriver.set(new AndroidDriver(new URL("http://0.0.0.0:4723"), capabilities));
+            appiumDriver.set(new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub/"), capabilities));
 
 
             getMobileDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
