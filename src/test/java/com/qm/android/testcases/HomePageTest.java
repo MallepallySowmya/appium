@@ -32,7 +32,7 @@ public class HomePageTest {
         homePage.deleteContact();
     }
 
-    @Test(description =  "addContactAndAddToFavorites", groups = "regression")
+   @Test(description =  "addContactAndAddToFavorites", groups = "regression")
     public void addContactAndAddToFavorites() throws InterruptedException {
         ReportManager.logInfo("addContactAndAddToFavorites");
         HomePage homePage = new HomePage();
@@ -43,7 +43,7 @@ public class HomePageTest {
         homePage.addToFavorites();
     }
 
-    @Test(description =  "sendSmsToContact", groups = "regression")
+     @Test(description =  "sendSmsToContact", groups = "smoke")
     public void sendSmsToContact() throws InterruptedException {
         ReportManager.logInfo("sendSmsToContact");
         HomePage homePage = new HomePage();
@@ -55,7 +55,7 @@ public class HomePageTest {
         Thread.sleep(2000);
     }
 
-    @Test(description =  "addContactAndEditContactDetails", groups = "regression")
+    @Test(description =  "addContactAndEditContactDetails", groups = "smoke")
     public void addContactAndEditContactDetails() throws InterruptedException {
         ReportManager.logInfo("Create New Contact And Verify Contact Details");
         HomePage homePage = new HomePage();
@@ -64,7 +64,7 @@ public class HomePageTest {
         homePage.addCompanyNameAndVerifyInExistingContact();
     }
 
-    @Test(description =  "addContactAndBlock", groups = "regression")
+    @Test(description =  "addContactAndBlock", groups = "smoke")
     public void addContactAndBlock(){
         ReportManager.logInfo("Create New Contact And block it");
         HomePage homePage = new HomePage();

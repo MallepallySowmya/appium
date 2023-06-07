@@ -74,13 +74,13 @@ public class HomePage {
         String actualCreateContactText = mobileActions
                 .getText(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "txt_CreateContact"));
         mobileActions.verifyText(expectedCreateContactText, actualCreateContactText);
-        mobileActions.sendKeys(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "EnterPhone"),Phone);
-        String ExpectedPhoneNo = mobileActions.getText(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "txt_Phone"));
         mobileActions.sendKeys(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "EnterFirstName"),FirstName);
-        ExpectedName = mobileActions.getText(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "txt_FirstName"));
         mobileActions.sendKeys(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "EnterLastName"),LastName);
+        mobileActions.sendKeys(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "EnterPhone"),Phone);
         mobileActions.click(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "Mobile"), "Mobile");
+        String ExpectedPhoneNo = mobileActions.getText(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "txt_Phone"));
         saveButton();
+        ExpectedName = mobileActions.getText(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "txt_Name"));
         String ActualPhoneNo = mobileActions.getText(MobileUtil.returnByBasedOnPageNameAndObjectName("ContactsPage", "txt_PhoneNo"));
         mobileActions.verifyText(ExpectedPhoneNo, ActualPhoneNo);
         ReportManager.logInfo("Successfully Contact Created ");

@@ -112,7 +112,7 @@
         "locatorValue": "//android.widget.TextView[@text='Text']"
     },
     "Text_Message" : {
-        "locatorType": "xpath",
+        "locatorType": "id",
         "locatorValue": "//android.widget.EditText[@text='Text message']"
     },
     "Send_Message_Button" : {

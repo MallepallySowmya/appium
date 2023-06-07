@@ -5,7 +5,7 @@
         <listener class-name="com.qm.listeners.TestNGRetry"></listener>
     </listeners>
     <test name="Test">
-        <parameter name="udid" value="192.168.27.101:5555"/>
+        <parameter name="udid" value="192.168.27.103:5555"/>
         <parameter name="systemPort" value="4723"/>
         <parameter name="platform" value="Android 10"/>
         <groups>
@@ -20,9 +20,6 @@
                     <include name="addContactAndVerifyContactDetails"/>
                     <include name="addContactAndDeleteContact"/>
                     <include name="addContactAndAddToFavorites"/>
-                    <include name="sendSmsToContact"/>
-                    <include name="addContactAndEditContactDetails"/>
-                    <include name="addContactAndBlock"/>
                 </methods>
             </class>
 

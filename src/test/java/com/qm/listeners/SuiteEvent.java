@@ -24,6 +24,7 @@ import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 import org.testng.ITestNGMethod;
 import org.testng.TestListenerAdapter;
+import org.testng.annotations.BeforeSuite;
 import org.testng.xml.XmlSuite;
 
 import com.opencsv.CSVWriter;
@@ -45,12 +46,17 @@ public class SuiteEvent extends TestListenerAdapter implements ISuiteListener, I
 
 	}
 
+//	@BeforeSuite
+//	public void serverStart(){
+//		AppiumServerJava appiumServerJava = new AppiumServerJava();
+//		appiumServerJava.startServer();
+//	}
+
 	@Override
 	public void onExecutionStart() {
 		String suite = System.getProperty("suite","Default suite picked");
 		System.out.println("Going to start suite: "+ suite);
 		ReportManager.startReportMobile();
-
 	}
 
 	@Override
