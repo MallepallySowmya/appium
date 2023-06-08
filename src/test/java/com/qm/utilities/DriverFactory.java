@@ -126,7 +126,7 @@ public class DriverFactory {
 
 
             appiumDriver.set(new AndroidDriver(new URL("http://127.0.0.1:4723"), capabilities));
-
+//            appiumDriver.set(new AndroidDriver(new URL("http://0.0.0.0:4723"), capabilities));
 
             getMobileDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         } else {
