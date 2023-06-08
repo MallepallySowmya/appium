@@ -30,7 +30,7 @@ public class AppiumServerJava {
         builder = new AppiumServiceBuilder();
         builder.withIPAddress(ConfigReader.getAppiumProp("serverIP"));
         builder.usingPort(Integer.parseInt(ConfigReader.getAppiumProp("port")));
-       builder.usingDriverExecutable(new File("C:/Program Files/nodejs/node.exe"))
+       builder.usingDriverExecutable(new File("C:/Program Files/nodejs/node"))
         builder.withAppiumJS(new File("C:/Users/QM-Testing/AppData/Roaming/npm/node_modules/appium/lib/main.js");
        builder.withCapabilities(cap);
 //        builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
