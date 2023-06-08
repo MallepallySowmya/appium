@@ -15,6 +15,9 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import com.qm.android.utils.AppiumServerJava;
+import com.qm.utilities.ConfigReader;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.testng.IExecutionListener;
 import org.testng.IReporter;
 import org.testng.IResultMap;
@@ -35,6 +38,21 @@ import com.qm.utilities.ReportManager;
 public class SuiteEvent extends TestListenerAdapter implements ISuiteListener, IExecutionListener, IReporter {
 	CSVWriter writer;
 	public List<String[]> data = new ArrayList<String[]>();
+
+
+	private AppiumDriverLocalService service;
+	private AppiumServiceBuilder builder;
+	@BeforeSuite
+	public void startAppiumServer(){
+		AppiumServerJava server = new AppiumServerJava();
+		server.startServer();
+		System.out.println("Server has started");
+//		builder = new AppiumServiceBuilder();
+//		builder.withIPAddress(ConfigReader.getAppiumProp("serverIP"));
+//		builder.usingPort(Integer.parseInt(ConfigReader.getAppiumProp("port")));
+//		service = AppiumDriverLocalService.buildService(builder);
+//		service.start();
+	}
 
 	@Override
 	public void onFinish(ISuite arg0) {

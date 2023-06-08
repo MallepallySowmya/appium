@@ -1,5 +1,7 @@
 package com.qm.utilities;
 
+import com.qm.android.utils.AppiumServerJava;
+
 import java.net.MalformedURLException;
 
 
@@ -29,6 +31,8 @@ public class InitDriver {
 
 	public void startMobileDriver(String platform, String udid, String systemPort, String deviceName, String deviceVersion) throws Exception {
 		System.out.println(str_Execution_Mobile);
+		AppiumServerJava server = new AppiumServerJava();
+		server.startServer();
 		if (str_Execution_Mobile.equalsIgnoreCase("Mobile_Application")) {
 			System.out.println("Execution started Mobile_Application @ " + str_MobileOSType);
 			switch (str_MobileOSType.trim()) {

@@ -2,6 +2,7 @@ package com.qm.utilities;
 
 
 
+import com.qm.android.utils.AppiumServerJava;
 import com.qm.listeners.MobileEvent;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.json.simple.JSONArray;
@@ -124,7 +125,7 @@ public class DriverFactory {
             capabilities.setCapability(MobileCapabilityType.NO_RESET, false);
 
 
-            appiumDriver.set(new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub/"), capabilities));
+            appiumDriver.set(new AndroidDriver(new URL("http://127.0.0.1:4723"), capabilities));
 
 
             getMobileDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

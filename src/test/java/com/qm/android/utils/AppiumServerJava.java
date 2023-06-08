@@ -24,15 +24,15 @@ public class AppiumServerJava {
     public void startServer() {
         //Set Capabilities
         cap = new DesiredCapabilities();
-        cap.setCapability("noReset", "false");
+//        cap.setCapability("noReset", "false");
 
         //Build the Appium service
         builder = new AppiumServiceBuilder();
         builder.withIPAddress(ConfigReader.getAppiumProp("serverIP"));
         builder.usingPort(Integer.parseInt(ConfigReader.getAppiumProp("port")));
-        builder.withCapabilities(cap);
-        builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
-        builder.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
+       builder.withCapabilities(cap);
+//        builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
+//        builder.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
 
         //Start the server with the builder
         service = AppiumDriverLocalService.buildService(builder);
